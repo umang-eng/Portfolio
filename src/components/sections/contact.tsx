@@ -1,50 +1,10 @@
 "use client";
 
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { useToast } from '@/hooks/use-toast';
-import { handleContactForm } from '@/lib/actions';
-import { Loader2, Send } from 'lucide-react';
-
-const contactSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
-});
-
-type ContactFormValues = z.infer<typeof contactSchema>;
+import React from 'react';
+import { PROFILE_DATA } from '@/lib/data';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
-  const { toast } = useToast();
-  const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: { name: '', email: '', message: '' },
-  });
-
-  const { isSubmitting } = form.formState;
-
-  async function onSubmit(data: ContactFormValues) {
-    try {
-      await handleContactForm(data);
-      toast({
-        title: 'Message Sent!',
-        description: "Thanks for reaching out. I'll get back to you soon.",
-      });
-      form.reset();
-    } catch (error) {
-      toast({
-        title: 'Uh oh!',
-        description: 'Something went wrong. Please try again.',
-        variant: 'destructive',
-      });
-    }
-  }
-
   return (
     <section id="contact" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -53,64 +13,42 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Have a question or want to work together? Drop me a line.
+            I'm currently available for freelance work and open to new opportunities.
           </p>
         </div>
 
-        <div className="max-w-xl mx-auto mt-12">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Your Name" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input type="email" placeholder="your@email.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="Your message..." className="min-h-[150px]" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <div className="text-center">
-                <Button type="submit" size="lg" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                  ) : (
-                    <Send className="mr-2 h-5 w-5" />
-                  )}
-                  Send Message
-                </Button>
-              </div>
-            </form>
-          </Form>
+        <div className="max-w-xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-1 gap-8">
+            <div className="flex items-center gap-4">
+                <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                    <Mail className="h-6 w-6" />
+                </div>
+                <div>
+                    <h3 className="font-headline text-lg font-semibold">Email</h3>
+                    <a href={`mailto:${PROFILE_DATA.email}`} className="text-muted-foreground hover:text-primary transition-colors">
+                        {PROFILE_DATA.email}
+                    </a>
+                </div>
+            </div>
+            <div className="flex items-center gap-4">
+                <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                    <Phone className="h-6 w-6" />
+                </div>
+                <div>
+                    <h3 className="font-headline text-lg font-semibold">Phone</h3>
+                    <a href={`tel:${PROFILE_DATA.phone}`} className="text-muted-foreground hover:text-primary transition-colors">
+                        {PROFILE_DATA.phone}
+                    </a>
+                </div>
+            </div>
+            <div className="flex items-center gap-4">
+                <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                    <MapPin className="h-6 w-6" />
+                </div>
+                <div>
+                    <h3 className="font-headline text-lg font-semibold">Location</h3>
+                    <p className="text-muted-foreground">{PROFILE_DATA.location}</p>
+                </div>
+            </div>
         </div>
       </div>
     </section>

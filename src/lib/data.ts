@@ -1,8 +1,11 @@
-import { Github, Linkedin, Twitter, Code2, Cpu, Server, Briefcase, GraduationCap } from "lucide-react";
+import { Github, Linkedin, Twitter, Code2, Cpu, Server, Mail, Phone, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 export const PROFILE_DATA = {
   name: 'Alex Doe',
   title: 'Full Stack Developer & AI Enthusiast',
+  email: 'alex.doe@example.com',
+  phone: '+1 (555) 123-4567',
+  location: 'Nikol, Ahmedabad',
   bio: 'A creative and detail-oriented developer with a passion for building beautiful, functional, and user-centric web applications. Specializing in modern JavaScript frameworks and exploring the frontiers of AI.',
   about: "I'm a software developer with a knack for turning complex problems into elegant solutions. With several years of experience in the industry, I've had the opportunity to work on a wide range of projects, from small business websites to large-scale enterprise applications. My passion for technology drives me to constantly learn and adapt to new challenges. When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.",
   socials: [

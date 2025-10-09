@@ -12,7 +12,6 @@ const NAV_LINKS = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
-  { name: "Resume AI", href: "#resume-ai" },
   { name: "Contact", href: "#contact" },
 ];
 

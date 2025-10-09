@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A placeholder for the user's profile picture.",
+      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Placeholder image for the first project.",
+      "imageUrl": "https://picsum.photos/seed/project1/600/400",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-2",
+      "description": "Placeholder image for the second project.",
+      "imageUrl": "https://picsum.photos/seed/project2/600/400",
+      "imageHint": "tech computer"
+    },
+    {
+      "id": "project-3",
+      "description": "Placeholder image for the third project.",
+      "imageUrl": "https://picsum.photos/seed/project3/600/400",
+      "imageHint": "modern office"
+    }
+  ]
 }

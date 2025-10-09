@@ -32,16 +32,11 @@ export default function Header() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent",
-        "animate-header-slide-down"
+        "animate-pop-in"
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <Briefcase className="h-6 w-6 text-primary" />
-          <span className="font-headline text-xl font-bold text-foreground">
-            Gitfolio Pro
-          </span>
-        </Link>
+        <div /> 
         <nav className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map((link) => (
             <Link

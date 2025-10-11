@@ -64,7 +64,7 @@ export default function Header() {
                      <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                         <Briefcase className="h-6 w-6 text-primary" />
                         <span className="font-headline text-xl font-bold text-foreground">
-                          Gitfolio Pro
+                          Portfolio
                         </span>
                       </Link>
                       <SheetTrigger asChild>

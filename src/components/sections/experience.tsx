@@ -28,9 +28,7 @@ export default function Experience() {
                 <div key={index} className="relative pl-12">
                   <div className="absolute left-4 top-1 h-px w-4 bg-border"></div>
                   <div className="absolute left-[11px] top-0 h-2.5 w-2.5 rounded-full bg-primary"></div>
-                  <p className="text-sm text-muted-foreground">{job.date}</p>
                   <h4 className="font-headline text-lg font-semibold mt-1">{job.title}</h4>
-                  <p className="text-sm font-medium text-muted-foreground">{job.company}</p>
                   <p className="mt-2 text-sm text-muted-foreground">{job.description}</p>
                 </div>
               ))}

@@ -1,17 +1,17 @@
 import { Github, Linkedin, Twitter, Code2, Cpu, Server, Mail, Phone, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 export const PROFILE_DATA = {
-  name: 'Alex Doe',
-  title: 'Full Stack Developer & AI Enthusiast',
-  email: 'alex.doe@example.com',
-  phone: '+1 (555) 123-4567',
-  location: 'Nikol, Ahmedabad',
+  name: 'Umang Bhut',
+  title: 'Front-End Developer & AI Enthusiast',
+  email: 'umangbhut10@gmail.com',
+  phone: '+91 878 088 1010',
+  location: 'Nikol, Ahmedabad, India',
   bio: 'A creative and detail-oriented developer with a passion for building beautiful, functional, and user-centric web applications. Specializing in modern JavaScript frameworks and exploring the frontiers of AI.',
-  about: "I'm a software developer with a knack for turning complex problems into elegant solutions. With several years of experience in the industry, I've had the opportunity to work on a wide range of projects, from small business websites to large-scale enterprise applications. My passion for technology drives me to constantly learn and adapt to new challenges. When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.",
+  about: "I'm a Front-end developer with a knack for turning complex problems into elegant solutions. My passion for technology drives me to constantly learn and adapt to new challenges. When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.",
   socials: [
-    { name: 'GitHub', url: 'https://github.com', icon: Github },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
-    { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
+    { name: 'GitHub', url: 'https://github.com/umang-eng', icon: Github },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/umang-bhut-24521b300/', icon: Linkedin },
+    { name: 'Twitter', url: 'https://x.com/bhut_umang7', icon: Twitter },
   ]
 };
 
@@ -19,7 +19,7 @@ export const SKILLS_DATA = [
   {
     title: 'Languages',
     icon: Code2,
-    skills: ['JavaScript', 'TypeScript', 'Python', 'HTML5', 'CSS3/SASS'],
+    skills: ['JavaScript', 'TypeScript', 'Python-basics', 'HTML5', 'CSS3', 'SQL', 'c++', 'Java', 'c' ],
   },
   {
     title: 'Frontend',
@@ -29,55 +29,47 @@ export const SKILLS_DATA = [
   {
     title: 'Backend',
     icon: Server,
-    skills: ['Node.js', 'Express', 'Firebase', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+    skills: ['Node.js', 'Express', 'Firebase'],
   },
 ];
 
 export const PROJECTS_DATA = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site built with Next.js and Firebase, including user authentication, product management, and a Stripe-integrated checkout process.',
-    tech: ['Next.js', 'React', 'Firebase', 'Stripe', 'Tailwind CSS'],
-    link: 'https://github.com',
+    title: 'Shopping Platform',
+    description: 'A full-featured e-commerce shoping site, including user authentication, product management, and a Stripe-integrated checkout process.',
+    tech: ['Next.js','TypeScript', 'React', 'Firebase', 'Tailwind CSS'],
+    link: 'https://umang-eng.github.io/Shoping-site/',
   },
   {
-    title: 'AI-Powered Chatbot',
-    description: 'A customer service chatbot using a custom-trained model to provide instant support and answer user queries on a documentation website.',
-    tech: ['Python', 'Genkit', 'React', 'Node.js'],
-    link: 'https://github.com',
+    title: 'Coffee Shop',
+    description: 'High-fidelity UI/UX design and responsive front-end development using HTML5, CSS3, and modern frameworks.',
+    tech: ['CSS','HTML5', 'React', 'Tailwind CSS'],
+    link: 'https://umang-eng.github.io/Caffee-Demo/',
   },
   {
-    title: 'Project Management Tool',
-    description: 'A Kanban-style project management application that helps teams organize tasks, track progress, and collaborate effectively in real-time.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'WebSockets'],
-    link: 'https://github.com',
+    title: 'Animated Cafe Website',
+    description: 'Clean, minimalist UI with responsive layout, high-fidelity visuals, and modern HTML5/CSS structure.',
+    tech: ['React', 'Node.js', 'HTML5', 'Tailwind CSS'],
+    link: 'https://umang-eng.github.io/Coffee-shop/aura-cafe.html',
   },
 ];
 
 export const EXPERIENCE_DATA = [
     {
-        company: "Tech Solutions Inc.",
-        title: "Senior Full Stack Developer",
-        date: "2020 - Present",
-        description: "Leading the development of a new SaaS platform, mentoring junior developers, and architecting scalable backend services. Implemented a new CI/CD pipeline, reducing deployment times by 40%."
-    },
-    {
-        company: "Web Innovators LLC",
-        title: "Frontend Developer",
-        date: "2018 - 2020",
-        description: "Developed and maintained responsive user interfaces for various client websites using React. Collaborated with designers and backend developers to create seamless user experiences."
+        title: "Curruntly Studying",
+        description: "I am a highly motivated 3rd-year college student deeply passionate about Front-End Development. While my professional journey is just beginning, my academic work and personal projects serve as my primary experience, proving my capability to deliver high-quality results. My dedication to crafting flawless user interfaces is absolute; I am fully accurate with my work, and the process of building and perfecting a smooth digital experience is what makes my day fulfilled."
     },
 ];
 
 export const EDUCATION_DATA = [
     {
-        school: "University of Technology",
-        degree: "M.S. in Computer Science",
-        date: "2016 - 2018",
+        school: "Vedant international school",
+        degree: "Science (PCM)",
+        date: "2021 - 2023",
     },
     {
-        school: "State University",
-        degree: "B.S. in Software Engineering",
-        date: "2012 - 2016",
+        school: "Indus institute of Technology and Engineering",
+        degree: "B.Tech in Information Technology",
+        date: "2023 - 2027",
     }
 ];

@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Development indicator cannot be disabled in Next.js 15.3.3
+  devIndicators: false,
   images: {
     remotePatterns: [
       {

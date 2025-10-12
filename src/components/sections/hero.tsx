@@ -44,7 +44,7 @@ export default function Hero() {
                 </Link>
               </Button>
               <Button variant="secondary" size="lg" asChild>
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="/Umang's-Resume.pdf" target="_blank">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </Link>

@@ -24,12 +24,12 @@ export const SKILLS_DATA = [
   {
     title: 'Frontend',
     icon: Cpu,
-    skills: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Redux', 'Zustand'],
+    skills: ['React', 'Next.js', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
     icon: Server,
-    skills: ['Node.js', 'Express', 'Firebase'],
+    skills: ['Node.js', 'Firebase'],
   },
 ];
 

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Code2, Cpu, Server, Mail, Phone, MapPin, Briefcase, GraduationCap } from "lucide-react";
+import { Github, Linkedin, Twitter, Code2, Cpu, Server, Mail, Phone, MapPin, Briefcase, GraduationCap, CodeSquare, ComponentIcon, ComputerIcon } from "lucide-react";
 
 export const PROFILE_DATA = {
   name: 'Umang Bhut',
@@ -16,6 +16,16 @@ export const PROFILE_DATA = {
 };
 
 export const SKILLS_DATA = [
+  {
+    title: 'AI Enthusiast',
+    icon: ComputerIcon,
+    skills: ['ChatGPT', 'Gemeni', 'Vercel-0', 'GitHub Copilot', 'Google - Fire base','Claude ai' ],
+  },
+  {
+    title: 'Majority Work',
+    icon: ComponentIcon,
+    skills: ['AI-Skills', 'Prompt Engineering', 'Web Development', 'Front-End Development'],
+  },
   {
     title: 'Languages',
     icon: Code2,
